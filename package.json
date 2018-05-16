@@ -22,7 +22,7 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint 'sass/**/*.scss' --syntax scss",
+    "stylelint": "stylelint 'source/sass/**/*.scss' --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "npm run build && gulp server"
@@ -33,12 +33,12 @@
     "Firefox ESR"
   ],
   "editorconfig-cli": [
-    "*.html",
-    "*.json",
-    "*.js",
-    "js/**/*.js",
-    "img/**/*.svg",
-    "sass/**/*.{sass,scss}"
+    "source/*.html",
+    "source/*.json",
+    "source/*.js",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
     "node": "8.2"
