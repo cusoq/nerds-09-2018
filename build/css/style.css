@@ -1,0 +1,22 @@
+p {
+  color: red; }
+
+.page-wrapper {
+  width: 400px;
+  min-height: 500px;
+  background-color: bisque;
+  outline: 2px dashed yellow; }
+
+.community {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px; }
+
+.community__member {
+  width: 80px;
+  min-height: 80px;
+  border: 5px solid gray;
+  border-radius: 50%; }
