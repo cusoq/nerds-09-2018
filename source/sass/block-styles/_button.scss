@@ -1,11 +1,25 @@
 .button {
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   border: none;
   margin: 0;
   padding: 0;
 }
+
 .button--cart {
+  color: inherit;
+  background-color: transparent;
+}
+
+.button--filter,
+.button--pagination {
+  color: inherit;
+  font-weight: 700;
+}
+
+.button--sort {
+  font-size: 14px;
+  text-transform: uppercase;
   color: inherit;
   background-color: transparent;
 }

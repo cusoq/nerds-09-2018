@@ -1,11 +1,72 @@
+.write-us__title {
+  font-size: 45px; }
+
+.write-us__close-popup {
+  font-size: 45px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: rgba(251, 86, 90, 0.5);
+  background-color: transparent; }
+
+.write-us__form label {
+  font-weight: 700; }
+
+.pagination__list {
+  font-weight: 700; }
+
+.card__title {
+  font-size: 18px;
+  text-transform: uppercase; }
+
+.sort__title {
+  font-size: 18px;
+  text-transform: uppercase; }
+
+.filters legend {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.page-footer__contacts-title {
+  font-size: 18px;
+  text-transform: uppercase; }
+
+.footer-message__slogan {
+  font-size: 36px; }
+
+.page-description__title,
+.page-statistics__table--rate {
+  font-size: 45px; }
+
+.page-description__subtitle,
+.page-statistics__title {
+  font-size: 16px;
+  text-transform: uppercase; }
+
+.offers__title {
+  font-size: 24px;
+  text-transform: uppercase; }
+
 .button {
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   border: none;
   margin: 0;
   padding: 0; }
 
 .button--cart {
+  color: inherit;
+  background-color: transparent; }
+
+.button--filter,
+.button--pagination {
+  color: inherit;
+  font-weight: 700; }
+
+.button--sort {
+  font-size: 14px;
+  text-transform: uppercase;
   color: inherit;
   background-color: transparent; }
 
@@ -15,6 +76,7 @@
 .header-menu {
   text-transform: uppercase; }
 
+.header__title,
 .header__slogan {
   font-size: 55px; }
 
@@ -440,7 +502,7 @@ template {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "robotoregular", "Arial", sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
