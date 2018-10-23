@@ -1,8 +1,26 @@
+.header {
+  padding-left: 140px;
+  padding-right: 140px;
+  min-height: 545px;
+  background-color: rgba(238, 238, 238, 1);
+}
+
+.header--inner {
+  min-height: 350px;
+}
+
+.header__menu-wrapper {
+  display: flex;
+  min-height: 114px;
+  outline: 3px dashed green;
+}
+
 .header__logo {
   font-size: 0;
 }
 
 .header-menu {
+  display: flex;
   text-transform: uppercase;
 }
 

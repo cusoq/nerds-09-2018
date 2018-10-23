@@ -1,0 +1,14 @@
+.partner-list {
+  display: flex;
+  min-height: 180px;
+  justify-content: space-around;
+  background-color: bisque;
+}
+
+.partner-list li {
+  outline: 2px dashed blue;
+  // display: flex;
+  // text-align: center;
+  // vertical-align: middle;
+  // width: 250px;
+}

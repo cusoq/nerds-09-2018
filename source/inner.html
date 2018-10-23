@@ -11,7 +11,7 @@
 </head>
 
 <body class="main-page">
-  <header class="header">
+  <header class="header header--inner">
     <div class="header__menu-wrapper">
       <a class="header__logo" href="index.html">
         <img src="img/nerds-logo-160-65.png" width="160" height="65" alt="Логотип">
@@ -77,102 +77,103 @@
         </fieldset>
       </form>
     </aside>
+    <div class="page__main-content">
+      <div class="sort">
+        <h3 class="sort__title">Сортировать:</h3>
+        <ul class="sort__buttons">
+          <li><button class="button button--sort">По цене</button></li>
+          <li><button class="button button--sort">По типу</button></li>
+          <li><button class="button button--sort">По названию</button></li>
+        </ul>
+        <ul class="sort__rate-buttons">
+          <li title="По возрастанию"><button class="button button--sort sort__rate-button--up">▲</button></li>
+          <li title="По убыванию"><button class="button button--sort sort__rate-button--down">▼</button></li>
+        </ul>
+      </div>
+      <ul class="cards">
+        <li class="cards__item card">
+          <img src="img/img-sedona-360-576.jpg" width="360" height="576" alt="Информационный сайт для туристов">
+          <div class="cards__popup visually-hidden">
+            <h3 class="cards__title">Sedona</h3>
+            <p class="cards__description">
+              Информационный сайт для туристов
+            </p>
+            <button class="button button--long">
+              9&emsp;900&emsp;руб.
+            </button>
+          </div>
+        </li>
+        <li class="cards__item card">
+          <img src="img/img-pink-360-576.jpg" width="360" height="576" alt="Продуктовый лендинг приложения для iOS и Android">
+          <div class="cards__popup visually-hidden">
+            <h3 class="cards__title">Pink</h3>
+            <p class="cards__description">
+              Продуктовый лендинг приложения для iOS и Android
+            </p>
+            <button class="button button--long">
+              9&emsp;900&emsp;руб.
+            </button>
+          </div>
+        </li>
+        <li class="cards__item card">
+          <img src="img/img-barbershop-360-576.jpg" width="360" height="576" alt="Салон красоты. Для мужчин, да.">
+          <div class="cards__popup visually-hidden">
+            <h3 class="cards__title">Barbershop</h3>
+            <p class="cards__description">
+              Салон красоты. Для мужчин, да.
+            </p>
+            <button class="button button--long">
+              9&emsp;900&emsp;руб.
+            </button>
+          </div>
+        </li>
+        <li class="cards__item card">
+          <img src="img/img-mishka-360-576.jpg" width="360" height="576" alt="Интернет-магазин вязаных игрушек">
+          <div class="cards__popup visually-hidden">
+            <h3 class="cards__title">Mishka</h3>
+            <p class="cards__description">
+              Интернет-магазин вязаных игрушек
+            </p>
+            <button class="button button--long">
+              9&emsp;900&emsp;руб.
+            </button>
+          </div>
+        </li>
+        <li class="cards__item card">
+          <img src="img/img-aplus-360-576.jpg" width="360" height="576" alt="Лендинг курсов повышения квалификации">
+          <div class="cards__popup visually-hidden">
+            <h3 class="cards__title">A Plus</h3>
+            <p class="cards__description">
+              Лендинг курсов повышения квалификации
+            </p>
+            <button class="button button--long">
+              9&emsp;900&emsp;руб.
+            </button>
+          </div>
+        </li>
+        <li class="cards__item card">
+          <img src="img/img-kvast-360-576.jpg" width="360" height="576" alt="Промо-сайт производителя крафтового кваса">
+          <div class="cards__popup visually-hidden">
+            <h3 class="cards__title">Kvast</h3>
+            <p class="cards__description">
+              Промо-сайт производителя крафтового кваса
+            </p>
+            <button class="button button--long">
+              9&emsp;900&emsp;руб.
+            </button>
+          </div>
+        </li>
+      </ul>
+      <div class="pagination">
+        <a class="button button--pagination button--long visually-hidden">Предыдущая</a>
+        <ul class="pagination__list">
+          <li class="pagination__item pagination__item--current"><a>1</a></li>
+          <li class="pagination__item"><a href="#">2</a></li>
+          <li class="pagination__item"><a href="#">3</a></li>
+        </ul>
+        <a class="button  button--pagination button--long" href="#">Следующая</a>
 
-    <div class="sort">
-      <h3 class="sort__title">Сортировать:</h3>
-      <ul class="sort__buttons">
-        <li><button class="button button--sort">По цене</button></li>
-        <li><button class="button button--sort">По типу</button></li>
-        <li><button class="button button--sort">По названию</button></li>
-      </ul>
-      <ul class="sort__rate-buttons">
-        <li title="По возрастанию"><button class="button button--sort sort__rate-button--up">▲</button></li>
-        <li title="По убыванию"><button class="button button--sort sort__rate-button--down">▼</button></li>
-      </ul>
-    </div>
-    <ul class="cards">
-      <li class="cards__item card">
-        <img src="img/img-sedona-360-576.jpg" width="360" height="576" alt="Информационный сайт для туристов">
-        <div class="card__popup visually-hidden">
-          <h3 class="card__title">Sedona</h3>
-          <p class="card__description">
-            Информационный сайт для туристов
-          </p>
-          <button class="button button--long">
-            9&emsp;900&emsp;руб.
-          </button>
-        </div>
-      </li>
-      <li class="cards__item card">
-        <img src="img/img-pink-360-576.jpg" width="360" height="576" alt="Продуктовый лендинг приложения для iOS и Android">
-        <div class="card__popup visually-hidden">
-          <h3 class="card__title">Pink</h3>
-          <p class="card__description">
-            Продуктовый лендинг приложения для iOS и Android
-          </p>
-          <button class="button button--long">
-            9&emsp;900&emsp;руб.
-          </button>
-        </div>
-      </li>
-      <li class="cards__item card">
-        <img src="img/img-barbershop-360-576.jpg" width="360" height="576" alt="Салон красоты. Для мужчин, да.">
-        <div class="card__popup visually-hidden">
-          <h3 class="card__title">Barbershop</h3>
-          <p class="card__description">
-            Салон красоты. Для мужчин, да.
-          </p>
-          <button class="button button--long">
-            9&emsp;900&emsp;руб.
-          </button>
-        </div>
-      </li>
-      <li class="cards__item card">
-        <img src="img/img-mishka-360-576.jpg" width="360" height="576" alt="Интернет-магазин вязаных игрушек">
-        <div class="card__popup visually-hidden">
-          <h3 class="card__title">Mishka</h3>
-          <p class="card__description">
-            Интернет-магазин вязаных игрушек
-          </p>
-          <button class="button button--long">
-            9&emsp;900&emsp;руб.
-          </button>
-        </div>
-      </li>
-      <li class="cards__item card">
-        <img src="img/img-aplus-360-576.jpg" width="360" height="576" alt="Лендинг курсов повышения квалификации">
-        <div class="card__popup visually-hidden">
-          <h3 class="card__title">A Plus</h3>
-          <p class="card__description">
-            Лендинг курсов повышения квалификации
-          </p>
-          <button class="button button--long">
-            9&emsp;900&emsp;руб.
-          </button>
-        </div>
-      </li>
-      <li class="cards__item card">
-        <img src="img/img-kvast-360-576.jpg" width="360" height="576" alt="Промо-сайт производителя крафтового кваса">
-        <div class="card__popup visually-hidden">
-          <h3 class="card__title">Kvast</h3>
-          <p class="card__description">
-            Промо-сайт производителя крафтового кваса
-          </p>
-          <button class="button button--long">
-            9&emsp;900&emsp;руб.
-          </button>
-        </div>
-      </li>
-    </ul>
-    <div class="pagination">
-      <a class="button button--pagination button--long visually-hidden">Предыдущая</a>
-      <ul class="pagination__list">
-        <li class="pagination__item pagination__item--current"><a>1</a></li>
-        <li class="pagination__item"><a href="#">2</a></li>
-        <li class="pagination__item"><a href="#">3</a></li>
-      </ul>
-      <a class="button  button--pagination button--long" href="#">Следующая</a>
-
+      </div>
     </div>
   </main>
   <footer class="page-footer">
@@ -188,13 +189,13 @@
         </button>
       </div>
     </div>
-    <ul class="footer-social">
-      <li><a class="footer-social__link--vk"></a></li>
-      <li><a class="footer-social__link--fb"></a></li>
-      <li><a class="footer-social__link--in"></a></li>
+    <ul class="page-footer__social">
+      <li class="footer__social--vk"><a></a></li>
+      <li class="footer__social--fb"><a></a></li>
+      <li class="footer__social--in"><a></a></li>
     </ul>
-    <div class="footer-message">
-      <p class="footer-message__slogan"><b>
+    <div class="page-footer__message">
+      <p class="page-footer__slogan"><b>
           Давайте дружить, это выгодно!
         </b></p>
       <p class="footer-message__text">

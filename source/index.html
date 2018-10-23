@@ -37,7 +37,7 @@
         </p>
         <button class="button button--long">Узнать больше</button>
       </div>
-      <div class="header__slider header__slider--love">
+      <div class="header__slider header__slider--love visually-hidden">
         <p class="header__slogan"><b>
             Любим математику как никто другой
           </b></p>
@@ -46,7 +46,7 @@
         </p>
         <button class="button button--long">Узнать больше</button>
       </div>
-      <div class="header__slider header__slider--hard">
+      <div class="header__slider header__slider--hard visually-hidden">
         <p class="header__slogan"><b>
             Только ночь, только хардкор
           </b></p>
@@ -97,7 +97,7 @@
         </button>
       </li>
     </ul>
-    <div class="page-description">
+    <div class="page__description page-description">
       <p class="page-description__title">
         <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
       </p>
@@ -113,7 +113,7 @@
         <li>Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
     </div>
-    <div class="page-statistics">
+    <div class="page__statistics page-statistics">
       <img src="img/nerds-illustration-360-208.png" width="360" height="208" alt="Нёрдс-иллюстрация">
       <h4 class="page-statistics__title">
         С 2004 года любим точность во всём:
@@ -168,18 +168,36 @@
         </button>
       </div>
     </div>
-    <ul class="footer-social">
-      <li><a class="footer-social__link--vk"></a></li>
-      <li><a class="footer-social__link--fb"></a></li>
-      <li><a class="footer-social__link--in"></a></li>
+    <ul class="page-footer__social">
+      <li class="footer__social--vk"><a></a></li>
+      <li class="footer__social--fb"><a></a></li>
+      <li class="footer__social--in"><a></a></li>
     </ul>
-    <div class="footer-message">
-      <p class="footer-message__slogan"><b>
+    <div class="page-footer__message">
+      <p class="page-footer__slogan"><b>
           Давайте дружить, это выгодно!
         </b></p>
       <p class="footer-message__text">
         Скидка 10% для друзей из социальных сетей.
       </p>
+      <div class="write-us visually-hidden">
+        <h2 class="write-us__title">
+          Напишите нам
+        </h2>
+        <button class="write-us__close-popup close-popup">&times;</button>
+        <form class="write-us__form" action="?" method="post">
+          <div><label for="name">Ваше имя:</label>
+            <p><input class="write-us__name" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста"></p>
+          </div>
+          <div><label for="email">Ваш e-mail:</label>
+            <p><input class="write-us__email" type="email" name="email" id="email" placeholder="Для отправки ответа"></p>
+          </div>
+          <label for="message">Текст письма:</label>
+          <p><textarea class="write-us__message" name="message" id="message" placeholder="В свободной форме">
+        </textarea></p>
+          <button class="button">Отправить</button>
+        </form>
+      </div>
     </div>
   </footer>
 </body>

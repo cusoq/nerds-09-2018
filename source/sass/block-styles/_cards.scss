@@ -1,4 +1,9 @@
-.card__title {
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards__title {
   font-size: 18px;
   text-transform: uppercase;
 }

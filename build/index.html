@@ -14,8 +14,8 @@
   <header class="header">
     <div class="header__menu-wrapper">
       <a class="header__logo">
-      <img src="img/nerds-logo-160-65.png" width="160" height="65" alt="Логотип">
-    </a>
+        <img src="img/nerds-logo-160-65.png" width="160" height="65" alt="Логотип">
+      </a>
       <ul class="header-menu">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
@@ -28,41 +28,41 @@
       <h1 class="header__title visually-hidden">
         Nerds главная страница
       </h1>
-    <div class="header__slider header__slider--expencive">
-      <p class="header__slogan"><b>
-        Долго, дорого, скурпулёзно.
-      </b></p>
-      <p>
-        Математически выверенный дизайн для вашего сайта или мобильного приложения.
-      </p>
-      <button class="button button--long">Узнать больше</button>
-    </div>
-    <!-- <div class="header__slider header__slider--love">
-      <p class="header__slogan"><b>
-      Любим математику как никто другой
-    </b></p>
-      <p>
-        Никакого креатива, только математические формулы для рассчёта идеальных пропорций.
-      </p>
-      <button class="button button--long">Узнать больше</button>
-    </div>
-    <div class="header__slider header__slider--hard">
-      <p class="header__slogan"><b>
-    Только ночь, только хардкор
-  </b></p>
-      <p>
-        Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.
-      </p>
-      <button class="button button--long">Узнать больше</button>
-    </div> -->
-    <ul class="header__slider-controls">
-      <li><button class="visually-hidden header__slider-control--expencive">expencive</button></li>
-      <li><button class="visually-hidden header__slider-control--love">love</button></li>
-      <li><button class="visually-hidden header__slider-control--hard">hard</button></li>
-    </ul>
+      <div class="header__slider header__slider--expencive">
+        <p class="header__slogan"><b>
+            Долго, дорого, скурпулёзно.
+          </b></p>
+        <p>
+          Математически выверенный дизайн для вашего сайта или мобильного приложения.
+        </p>
+        <button class="button button--long">Узнать больше</button>
+      </div>
+      <div class="header__slider header__slider--love visually-hidden">
+        <p class="header__slogan"><b>
+            Любим математику как никто другой
+          </b></p>
+        <p>
+          Никакого креатива, только математические формулы для рассчёта идеальных пропорций.
+        </p>
+        <button class="button button--long">Узнать больше</button>
+      </div>
+      <div class="header__slider header__slider--hard visually-hidden">
+        <p class="header__slogan"><b>
+            Только ночь, только хардкор
+          </b></p>
+        <p>
+          Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.
+        </p>
+        <button class="button button--long">Узнать больше</button>
+      </div>
+      <ul class="header__slider-controls">
+        <li><button class="visually-hidden header__slider-control--expencive">expencive</button></li>
+        <li><button class="visually-hidden header__slider-control--love">love</button></li>
+        <li><button class="visually-hidden header__slider-control--hard">hard</button></li>
+      </ul>
 
-    <!-- </div> -->
-  </div></header>
+    </div>
+  </header>
   <main class="page">
 
     <ul class="offers">
@@ -97,7 +97,7 @@
         </button>
       </li>
     </ul>
-    <div class="page-description">
+    <div class="page__description page-description">
       <p class="page-description__title">
         <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
       </p>
@@ -113,7 +113,7 @@
         <li>Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
     </div>
-    <div class="page-statistics">
+    <div class="page__statistics page-statistics">
       <img src="img/nerds-illustration-360-208.png" width="360" height="208" alt="Нёрдс-иллюстрация">
       <h4 class="page-statistics__title">
         С 2004 года любим точность во всём:
@@ -134,24 +134,24 @@
     <ul class="partner-list">
       <li>
         <a href="#">
-        <img src="img/partner-1-199-68.png" width="199" height="68" alt="HTML-academy">
-      </a>
-    </li>
+          <img src="img/partner-1-199-68.png" width="199" height="68" alt="HTML-academy">
+        </a>
+      </li>
       <li>
         <a href="#">
-        <img src="img/partner-2-209-90.png" width="209" height="90" alt="Borodinski">
-      </a>
-    </li>
+          <img src="img/partner-2-209-90.png" width="209" height="90" alt="Borodinski">
+        </a>
+      </li>
       <li>
         <a href="#">
-        <img src="img/partner-3-185-52.png" width="185" height="52" alt="Pink">
-      </a>
-    </li>
+          <img src="img/partner-3-185-52.png" width="185" height="52" alt="Pink">
+        </a>
+      </li>
       <li>
         <a href="#">
-        <img src="img/partner-4-173-84.png" width="173" height="84" alt="Mishka">
-      </a>
-    </li>
+          <img src="img/partner-4-173-84.png" width="173" height="84" alt="Mishka">
+        </a>
+      </li>
     </ul>
 
   </main>
@@ -168,18 +168,36 @@
         </button>
       </div>
     </div>
-    <ul class="footer-social">
-      <li><a class="footer-social__link--vk"></a></li>
-      <li><a class="footer-social__link--fb"></a></li>
-      <li><a class="footer-social__link--in"></a></li>
+    <ul class="page-footer__social">
+      <li class="footer__social--vk"><a></a></li>
+      <li class="footer__social--fb"><a></a></li>
+      <li class="footer__social--in"><a></a></li>
     </ul>
-    <div class="footer-message">
-      <p class="footer-message__slogan"><b>
-        Давайте дружить, это выгодно!
-      </b></p>
+    <div class="page-footer__message">
+      <p class="page-footer__slogan"><b>
+          Давайте дружить, это выгодно!
+        </b></p>
       <p class="footer-message__text">
         Скидка 10% для друзей из социальных сетей.
       </p>
+      <div class="write-us visually-hidden">
+        <h2 class="write-us__title">
+          Напишите нам
+        </h2>
+        <button class="write-us__close-popup close-popup">&times;</button>
+        <form class="write-us__form" action="?" method="post">
+          <div><label for="name">Ваше имя:</label>
+            <p><input class="write-us__name" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста"></p>
+          </div>
+          <div><label for="email">Ваш e-mail:</label>
+            <p><input class="write-us__email" type="email" name="email" id="email" placeholder="Для отправки ответа"></p>
+          </div>
+          <label for="message">Текст письма:</label>
+          <p><textarea class="write-us__message" name="message" id="message" placeholder="В свободной форме">
+        </textarea></p>
+          <button class="button">Отправить</button>
+        </form>
+      </div>
     </div>
   </footer>
 </body>

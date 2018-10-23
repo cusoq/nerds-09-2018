@@ -1,3 +1,10 @@
+.filters {
+  display: inline-block;
+  // box-sizing: border-box;
+  width: 260px;
+  background-color: aqua;
+}
+
 .filters legend {
   font-size: 18px;
   text-transform: uppercase;

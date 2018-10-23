@@ -1,4 +1,18 @@
+.sort {
+  display: flex;
+  background-color: pink;
+}
+
 .sort__title {
   font-size: 18px;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.sort__buttons {
+  display: flex;
+}
+
+.sort__rate-buttons {
+  display: flex;
 }

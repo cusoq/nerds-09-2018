@@ -1,0 +1,28 @@
+.page {
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.page__description {
+  display: inline-block;
+  width: 795px;
+  min-height: 530px;
+  outline: 2px dashed yellow;
+}
+
+.page__statistics {
+  display: inline-block;
+  vertical-align: top;
+  width: 360px;
+  min-height: 530px;
+  outline: 2px dotted blue;
+}
+
+.page__main-content {
+  display: inline-flex;
+  flex-direction: column;
+  // box-sizing: border-box;
+  outline: 3px dashed green;
+  width: 750px;
+  vertical-align: top;
+}

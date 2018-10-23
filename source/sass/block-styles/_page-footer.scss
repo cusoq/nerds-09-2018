@@ -1,8 +1,43 @@
+.page-footer__contacts {
+  min-height: 420px;
+  background-image: url("../img/map-1440-416.png");
+}
+
 .page-footer__contacts-title {
   font-size: 18px;
   text-transform: uppercase;
 }
 
-.footer-message__slogan {
+
+.page-footer__social {
+  display: inline-flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 540px;
+  min-height: 220px;
+  padding-top: 65px;
+  padding-left: 140px;
+  padding-right: 140px;
+  background-color: yellow;
+}
+
+.page-footer__social li {
+  outline: 2px dotted green;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.page-footer__message {
+  display: inline-block;
+  vertical-align: top;
+  width: 895px;
+  min-height: 220px;
+  background-color: pink;
+}
+
+.page-footer__slogan {
   font-size: 36px;
 }

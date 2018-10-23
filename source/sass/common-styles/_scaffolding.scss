@@ -2,11 +2,10 @@ body {
   box-sizing: border-box;
   font-family: "robotoregular", "Arial", sans-serif;
   font-size: 16px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  min-width: 320px;
-  // text-align: center;
-  // text-transform: uppercase;
+  width: 1440px;
+  outline: 2px solid pink;
 }
 
 a {
@@ -37,6 +36,7 @@ fieldset {
   outline: 0;
   outline-offset: 0;
 }
+
 ::after,
 ::before {
   box-sizing: border-box;
