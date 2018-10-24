@@ -12,30 +12,32 @@
 
 <body class="main-page">
   <header class="header">
-    <div class="header__menu-wrapper">
-      <a class="header__logo">
+      <ul class="header__menu">
+      <li><a class="header__logo">
         <img src="img/nerds-logo-160-65.png" width="160" height="65" alt="Логотип">
-      </a>
-      <ul class="header-menu">
+      </a></li>
+      <li>
+        <ul class="header__links">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
         <li><a href="inner.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <button class="button button--cart">Корзина</button>
-    </div>
+    </li>
+        <li><button class="button button__cart">Корзина</button></li>
+    </ul>
     <div class="header__description">
       <h1 class="header__title visually-hidden">
         Nerds главная страница
       </h1>
       <div class="header__slider header__slider--expencive">
-        <p class="header__slogan"><b>
-            Долго, дорого, скурпулёзно.
-          </b></p>
+        <p class="header__slogan">
+            Долго, дорого, скрупулёзно.
+          </p>
         <p>
-          Математически выверенный дизайн для вашего сайта или мобильного приложения.
+          Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
         </p>
-        <button class="button button--long">Узнать больше</button>
+        <button class="button button__slider">Узнать больше</button>
       </div>
       <div class="header__slider header__slider--love visually-hidden">
         <p class="header__slogan"><b>
@@ -44,7 +46,7 @@
         <p>
           Никакого креатива, только математические формулы для рассчёта идеальных пропорций.
         </p>
-        <button class="button button--long">Узнать больше</button>
+        <button class="button button__slider">Узнать больше</button>
       </div>
       <div class="header__slider header__slider--hard visually-hidden">
         <p class="header__slogan"><b>
@@ -53,7 +55,7 @@
         <p>
           Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.
         </p>
-        <button class="button button--long">Узнать больше</button>
+        <button class="button button__slider">Узнать больше</button>
       </div>
       <ul class="header__slider-controls">
         <li><button class="visually-hidden header__slider-control--expencive">expencive</button></li>
