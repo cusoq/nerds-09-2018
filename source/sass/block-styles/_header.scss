@@ -1,13 +1,14 @@
 .header {
+  position: relative;
   padding-top: 45px;
   padding-left: 140px;
   padding-right: 140px;
-  min-height: 500px;
+  min-height: 495px;
   background-color: rgba(238, 238, 238, 1);
 }
 
 .header--inner {
-  min-height: 350px;
+  min-height: 305px;
 }
 
 .header__logo {
@@ -36,9 +37,12 @@
   line-height: 5;
 }
 
-.header__slider {
-  background-color: aqua;
-  padding-top: 62px;
+.header__title {
+  font-size: 55px;
+  line-height: 1;
+  margin: 0;
+  padding-top: 52px;
+  text-align: center;
 }
 
 .header__slogan {
@@ -46,10 +50,83 @@
   font-size: 55px;
   line-height: 1;
   margin: 0;
-  padding-right: 600px;
+  padding-right: 640px;
 }
 
-// .header__description {
-//   padding-right: 850px;
-//   outline: 2px dotted pink;
-// }
+.header__description {
+  padding-top: 8px;
+  padding-bottom: 22px;
+}
+
+.header__slider {
+  position: relative;
+  padding-top: 62px;
+}
+
+
+.header__slider--expencive::after {
+  content: "";
+  position: absolute;
+  width: 698px;
+  height: 413px;
+  top: 0;
+  left: 430px;
+  background-image: url("../img/slide1-698-413.png");
+  background-repeat: no-repeat;
+}
+
+.header__slider--love::after {
+  content: "";
+  position: absolute;
+  width: 663px;
+  height: 430px;
+  top: -15px;
+  left: 500px;
+  background-image: url("../img/slide2-663-430.png");
+  background-repeat: no-repeat;
+}
+
+.header__slider--hard::after {
+  content: "";
+  position: absolute;
+  width: 759px;
+  height: 411px;
+  top: 0;
+  left: 400px;
+  background-image: url("../img/slide3-759-411.png");
+  background-repeat: no-repeat;
+}
+
+.header__slider-controls {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+  height: 20px;
+  top: 79%;
+  left: 47%;
+  z-index: 1;
+}
+
+.header__slider-control {
+  position: relative;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 2;
+}
+
+.header__slider-control--visual::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 25%;
+  left: 25%;
+  border-radius: 50%;
+  border: 2px solid rgba(194, 194, 194, 1);
+}
