@@ -1,10 +1,23 @@
 .offers {
   display: flex;
-  min-height: 500px;
-  outline: 2px dotted red;
+  justify-content: space-between;
+  width: 1100px;
+  min-height: 470px;
+  background-color: aqua;
+}
+
+.offers__item {
+  width: 300px;
 }
 
 .offers__title {
   font-size: 24px;
   text-transform: uppercase;
+  line-height: 2.6;
+  margin: 0;
+}
+
+.offers__description {
+  margin: 0 0 35px 0;
+  padding-right: 20px;
 }

@@ -30,6 +30,24 @@
   background-color: rgba(251, 86, 90, 1);
 }
 
+.button__offer {
+  width: 160px;
+  height: 50px;
+}
+
+.button__offer--web {
+  background-color: rgba(251, 86, 90, 1);
+}
+
+.button__offer--app {
+  background-color: rgba(0, 202, 116, 1);
+}
+
+.button__offer--presentation {
+  background-color: rgba(239, 200, 73, 1);
+}
+
+
 .button--filter,
 .button--pagination {
   color: inherit;
