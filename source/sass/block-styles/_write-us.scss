@@ -1,9 +1,28 @@
+.write-us {
+  position: fixed;
+  box-sizing: border-box;
+  top: 15%;
+  left: 24%;
+  width: 960px;
+  height: 590px;
+  padding-top: 70px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: aqua;
+  z-index: 2;
+}
+
 .write-us__title {
   font-size: 45px;
+  line-height: 1;
+  margin: 0;
 }
 
 .write-us__close-popup {
-  font-size: 45px;
+  position: absolute;
+  top: 65px;
+  left: 850px;
+  font-size: 52px;
   border: none;
   margin: 0;
   padding: 0;

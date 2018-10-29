@@ -19,6 +19,17 @@
 }
 
 .page-description__offers li {
+  position: relative;
   line-height: 3;
   padding-left: 40px;
+}
+
+.page-description__offers li::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: rgba(251, 86, 90, 1);
 }
