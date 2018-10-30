@@ -214,16 +214,19 @@
     </h2>
     <button class="write-us__close-popup close-popup">&times;</button>
     <form class="write-us__form" action="?" method="post">
-      <div><label for="name">Ваше имя:</label>
-        <p><input class="write-us__name" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста"></p>
-      </div>
-      <div><label for="email">Ваш e-mail:</label>
-        <p><input class="write-us__email" type="email" name="email" id="email" placeholder="Для отправки ответа"></p>
-      </div>
-      <label for="message">Текст письма:</label>
-      <p><textarea class="write-us__message" name="message" id="message" placeholder="В свободной форме">
-    </textarea></p>
-      <button class="button">Отправить</button>
+      <p class="write-us__name">
+        <label for="name">Ваше имя:</label><br>
+        <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" required="">
+      </p>
+      <p class="write-us__email">
+        <label for="email">Ваш e-mail:</label><br>
+        <input type="email" name="email" id="email" placeholder="Для отправки ответа" required="">
+      </p>
+      <p class="write-us__message">
+        <label for="message">Текст письма:</label><br>
+        <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button button__write-us">Отправить</button>
     </form>
   </div>
 </body>

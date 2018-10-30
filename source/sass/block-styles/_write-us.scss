@@ -8,7 +8,8 @@
   padding-top: 70px;
   padding-left: 100px;
   padding-right: 100px;
-  background-color: aqua;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 10px 20px 6px rgba(150, 150, 150, 1);
   z-index: 2;
 }
 
@@ -30,6 +31,40 @@
   background-color: transparent;
 }
 
+.write-us__form {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
 .write-us__form label {
-  font-weight: 700;
+  font-family: "robotomedium", "Arial", sans-serif;
+  line-height: 2.4;
+}
+
+.write-us__name {
+  margin: 0 40px 0 0;
+}
+
+.write-us__email {
+  margin: 0;
+}
+
+.write-us__message {
+  margin: 25px 0 35px 0;
+}
+
+.write-us__name input,
+.write-us__email input {
+  box-sizing: border-box;
+  width: 360px;
+  height: 50px;
+  padding-left: 20px;
+}
+
+.write-us__message textarea {
+  box-sizing: border-box;
+  width: 760px;
+  height: 120px;
+  padding: 20px;
 }
