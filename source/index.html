@@ -29,6 +29,9 @@
     <h1 class="header__title visually-hidden">
       Nerds главная страница
     </h1>
+    <input class="header__slider-radio--expencive visually-hidden" type="radio" name="point" id="slide1" checked>
+    <input class="header__slider-radio--love visually-hidden" type="radio" name="point" id="slide2">
+    <input class="header__slider-radio--hard visually-hidden" type="radio" name="point" id="slide3">
     <div class="header__slider header__slider--expencive">
       <p class="header__slogan">
         Долго, дорого, скрупулёзно.
@@ -38,7 +41,7 @@
       </p>
       <button class="button button__slider">Узнать больше</button>
     </div>
-    <div class="header__slider header__slider--love visually-hidden">
+    <div class="header__slider header__slider--love">
       <p class="header__slogan">
         Любим математику как никто другой
       </p>
@@ -47,7 +50,7 @@
       </p>
       <button class="button button__slider">Узнать больше</button>
     </div>
-    <div class="header__slider header__slider--hard visually-hidden">
+    <div class="header__slider header__slider--hard">
       <p class="header__slogan">
         Только ночь, только хардкор
       </p>
@@ -56,12 +59,11 @@
       </p>
       <button class="button button__slider">Узнать больше</button>
     </div>
-    <ul class="header__slider-controls">
-      <li><button class="header__slider-control header__slider-control--expencive header__slider-control--visual"></button></li>
-      <li><button class="header__slider-control header__slider-control--love"></button></li>
-      <li><button class="header__slider-control header__slider-control--hard"></button></li>
-    </ul>
-
+    <div class="header__slider-controls">
+      <label class="header__slider-control--expencive" for="slide1"></label>
+      <label class="header__slider-control--love" for="slide2"></label>
+      <label class="header__slider-control--hard" for="slide3"></label>
+    </div>
   </header>
   <main class="page">
 

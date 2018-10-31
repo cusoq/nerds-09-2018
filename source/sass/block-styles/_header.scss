@@ -59,10 +59,10 @@
 }
 
 .header__slider {
+  display: none;
   position: relative;
   padding-top: 62px;
 }
-
 
 .header__slider--expencive::after {
   content: "";
@@ -108,7 +108,8 @@
   z-index: 1;
 }
 
-.header__slider-control {
+.header__slider-controls label {
+  cursor: pointer;
   position: relative;
   border: none;
   margin: 0;
@@ -117,16 +118,28 @@
   height: 20px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 1);
-  z-index: 2;
+  z-index: 3;
 }
 
-.header__slider-control--visual::after {
+.header__slider-controls label:hover {
+  background: rgba(218, 218, 218, 1);
+}
+
+.header__slider-radio--expencive:checked ~ .header__slider--expencive,
+.header__slider-radio--love:checked ~ .header__slider--love,
+.header__slider-radio--hard:checked ~ .header__slider--hard {
+  display: block;
+}
+
+.header__slider-radio--expencive:checked ~ .header__slider-controls > .header__slider-control--expencive::after,
+.header__slider-radio--love:checked ~ .header__slider-controls > .header__slider-control--love::after,
+.header__slider-radio--hard:checked ~ .header__slider-controls > .header__slider-control--hard::after {
   position: absolute;
   content: "";
   width: 10px;
   height: 10px;
   top: 25%;
-  left: 25%;
+  left: 24%;
   border-radius: 50%;
   border: 2px solid rgba(194, 194, 194, 1);
 }
