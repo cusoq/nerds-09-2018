@@ -1,3 +1,88 @@
+.slider__content {
+  display: none;
+  position: relative;
+  padding-top: 62px;
+  opacity: 0;
+  -webkit-transition: opacity 0.7s;
+  transition: opacity 0.7s; }
+
+.slider__content--expencive::after {
+  content: "";
+  position: absolute;
+  width: 698px;
+  height: 413px;
+  top: 0;
+  left: 430px;
+  background-image: url("../img/slide1-698-413.png");
+  background-repeat: no-repeat; }
+
+.slider__content--love::after {
+  content: "";
+  position: absolute;
+  width: 663px;
+  height: 430px;
+  top: -15px;
+  left: 500px;
+  background-image: url("../img/slide2-663-430.png");
+  background-repeat: no-repeat; }
+
+.slider__content--hard::after {
+  content: "";
+  position: absolute;
+  width: 759px;
+  height: 411px;
+  top: 0;
+  left: 400px;
+  background-image: url("../img/slide3-759-411.png");
+  background-repeat: no-repeat; }
+
+.slider__controls {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90px;
+  height: 20px;
+  top: 79%;
+  left: 47%;
+  z-index: 1; }
+
+.slider__controls label {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 3; }
+
+.slider__controls label:hover {
+  background: #dadada; }
+
+.slider__radio--expencive:checked ~ .slider__content--expencive,
+.slider__radio--love:checked ~ .slider__content--love,
+.slider__radio--hard:checked ~ .slider__content--hard {
+  display: block;
+  opacity: 1; }
+
+.slider__radio--expencive:checked ~ .slider__controls > .slider__control--expencive::after,
+.slider__radio--love:checked ~ .slider__controls > .slider__control--love::after,
+.slider__radio--hard:checked ~ .slider__controls > .slider__control--hard::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 25%;
+  left: 24%;
+  border-radius: 50%;
+  border: 2px solid #c2c2c2; }
+
 .partner-list {
   position: relative;
   display: inline;
@@ -476,87 +561,6 @@
 .header__description {
   padding-top: 8px;
   padding-bottom: 22px; }
-
-.header__slider {
-  display: none;
-  position: relative;
-  padding-top: 62px; }
-
-.header__slider--expencive::after {
-  content: "";
-  position: absolute;
-  width: 698px;
-  height: 413px;
-  top: 0;
-  left: 430px;
-  background-image: url("../img/slide1-698-413.png");
-  background-repeat: no-repeat; }
-
-.header__slider--love::after {
-  content: "";
-  position: absolute;
-  width: 663px;
-  height: 430px;
-  top: -15px;
-  left: 500px;
-  background-image: url("../img/slide2-663-430.png");
-  background-repeat: no-repeat; }
-
-.header__slider--hard::after {
-  content: "";
-  position: absolute;
-  width: 759px;
-  height: 411px;
-  top: 0;
-  left: 400px;
-  background-image: url("../img/slide3-759-411.png");
-  background-repeat: no-repeat; }
-
-.header__slider-controls {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 90px;
-  height: 20px;
-  top: 79%;
-  left: 47%;
-  z-index: 1; }
-
-.header__slider-controls label {
-  cursor: pointer;
-  position: relative;
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: white;
-  z-index: 3; }
-
-.header__slider-controls label:hover {
-  background: #dadada; }
-
-.header__slider-radio--expencive:checked ~ .header__slider--expencive,
-.header__slider-radio--love:checked ~ .header__slider--love,
-.header__slider-radio--hard:checked ~ .header__slider--hard {
-  display: block; }
-
-.header__slider-radio--expencive:checked ~ .header__slider-controls > .header__slider-control--expencive::after,
-.header__slider-radio--love:checked ~ .header__slider-controls > .header__slider-control--love::after,
-.header__slider-radio--hard:checked ~ .header__slider-controls > .header__slider-control--hard::after {
-  position: absolute;
-  content: "";
-  width: 10px;
-  height: 10px;
-  top: 25%;
-  left: 24%;
-  border-radius: 50%;
-  border: 2px solid #c2c2c2; }
 
 @font-face {
   font-family: "robotobold";
