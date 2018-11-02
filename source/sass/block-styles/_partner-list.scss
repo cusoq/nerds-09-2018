@@ -47,4 +47,14 @@
 .partner-list img {
   display: block;
   margin: 0 auto;
+  opacity: 0.4;
+}
+
+.partner-list__link:hover img,
+.partner-list__link:focus img {
+  opacity: 1;
+}
+
+.partner-list__link:active img {
+  opacity: 0.1;
 }

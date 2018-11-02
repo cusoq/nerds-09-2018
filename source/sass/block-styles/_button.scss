@@ -8,6 +8,7 @@
 }
 
 .button__cart {
+  position: relative;
   padding-left: 85px;
   color: inherit;
   background-color: transparent;
@@ -17,9 +18,30 @@
   line-height: 77px;
 }
 
+.button__cart:hover,
+.button__cart:focus {
+  color: rgba(251, 86, 90, 1);
+}
+
+.button__cart:active {
+  color: rgba(166, 166, 166, 1);
+}
+
+.button__cart--current::after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 45px;
+  width: 115px;
+  height: 2px;
+  background-color: rgba(251, 86, 90, 1);
+}
+
 .button__slider {
+  position: absolute;
   width: 240px;
   height: 50px;
+  top: 410px;
   background-color: rgba(251, 86, 90, 1);
 }
 
@@ -66,3 +88,47 @@
   color: inherit;
   background-color: transparent;
 }
+/////////////////////////////////////////////////////////////////////
+// Поведение кнопок и ссылок:
+.button__slider:hover,
+.button__slider:focus,
+.button__contacts:hover,
+.button__contacts:focus,
+.button__offer--web:hover,
+.button__offer--web:focus,
+.button__write-us:hover,
+.button__write-us:focus,
+.page-footer__social a:hover,
+.page-footer__social a:focus {
+  background-color: rgba(231, 66, 70, 1);
+}
+
+.button__slider:active,
+.button__contacts:active,
+.button__offer--web:active,
+.button__write-us:active,
+.page-footer__social a:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(215, 55, 59, 1);
+}
+
+.button__offer--app:hover,
+.button__offer--app:focus {
+  background-color: rgba(0, 188, 108, 1);
+}
+
+.button__offer--app:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 170, 98, 1);
+}
+
+.button__offer--presentation:hover,
+.button__offer--presentation:focus {
+  background-color: rgba(234, 181, 52, 1);
+}
+
+.button__offer--presentation:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(229, 167, 34, 1);
+}
+////////////////////////////////////////////////////////////////////
