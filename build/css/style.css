@@ -1,3 +1,64 @@
+.range__controls {
+  position: relative;
+  width: 260px;
+  height: 80px;
+  margin-top: 47px;
+  margin-bottom: 15px;
+  background-color: #ededed; }
+
+.range__controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 200px;
+  height: 3px;
+  background-color: #d7dbdd; }
+
+.range__bar {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  height: 3px;
+  background-color: #71c878;
+  z-index: 1; }
+
+.range__control {
+  position: absolute;
+  top: 39%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ababab;
+  -webkit-box-shadow: inset 0 0 0 8px white, 0 1px 0 1px #d7dbdd;
+          box-shadow: inset 0 0 0 8px white, 0 1px 0 1px #d7dbdd;
+  z-index: 2; }
+
+.range__control--min {
+  left: 6%; }
+
+.range__control--max {
+  left: 60%; }
+
+.range__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.range__price label {
+  text-transform: uppercase; }
+
+.range__price input {
+  outline: none;
+  border: none;
+  background-color: #ededed;
+  width: 80px;
+  height: 36px;
+  text-align: center; }
+
 .slider__content {
   position: absolute;
   width: auto;
@@ -134,6 +195,18 @@
   padding-left: 140px;
   padding-right: 140px; }
 
+.page--inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding-top: 0;
+  padding-left: 140px;
+  padding-right: 140px; }
+
 .page__description {
   display: inline-block;
   width: 795px;
@@ -144,6 +217,10 @@
   vertical-align: top;
   width: 360px;
   min-height: 530px; }
+
+.page__catalog {
+  outline: 3px dashed pink;
+  width: 760px; }
 
 .write-us {
   position: fixed;
@@ -259,14 +336,17 @@
   display: flex; }
 
 .filters {
-  display: inline-block;
   width: 260px;
-  background-color: aqua; }
+  outline: 3px dotted aqua; }
 
 .filters legend {
-  font-size: 18px;
+  font-family: "robotobold", "Arial", sans-serif;
+  font-size: 19px;
   text-transform: uppercase;
-  font-weight: 700; }
+  padding-top: 54px; }
+
+.filters__layout-type label {
+  padding-left: 35px; }
 
 .page-footer__contacts {
   position: relative;

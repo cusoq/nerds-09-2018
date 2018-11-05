@@ -1,12 +1,15 @@
 .filters {
-  display: inline-block;
-  // box-sizing: border-box;
   width: 260px;
-  background-color: aqua;
+  outline: 3px dotted aqua;
 }
 
 .filters legend {
-  font-size: 18px;
+  font-family: "robotobold", "Arial", sans-serif;
+  font-size: 19px;
   text-transform: uppercase;
-  font-weight: 700;
+  padding-top: 54px;
+}
+
+.filters__layout-type label {
+  padding-left: 35px;
 }

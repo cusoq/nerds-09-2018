@@ -32,24 +32,21 @@
       </h1>
     </div>
   </header>
-  <main class="page">
-    <aside class="filters">
+  <main class="page page--inner">
+    <aside class="page__filters filters">
       <form class="filters__form" method="get" action="?">
-        <!-- <h3 class="filters__title visually-hidden">Стоимость:</h3> -->
         <fieldset class="filters__price range">
-          <legend>Стоимость</legend>
+          <legend>Стоимость:</legend>
           <input class="range__input visually-hidden" type="range" name="price" value="1000">
           <div class="range__controls">
-            <div class="range__scale">
-              <div class="range__bar" style="margin-left: 0%; width: 60%">
+              <div class="range__bar" style="margin-left: 0%; width: 55%">
               </div>
-            </div>
-            <div class="range__toggle range__toggle--min"></div>
-            <div class="range__toggle range__toggle--max"></div>
+            <div class="range__control range__control--min"></div>
+            <div class="range__control range__control--max"></div>
           </div>
           <div class="range__price">
             <label class="range__price--min">от&emsp;<input name="min-price" type="text" value="0"></label>
-            <label class="range__price--max">до&emsp;<input name="max-price" type="text" value="15000"></label>
+            <label class="range__price--max">до&emsp;<input name="max-price" type="text" value="15&thinsp;000"></label>
           </div>
         </fieldset>
         <fieldset class="filters__layout-type radiobutton">
@@ -79,7 +76,7 @@
         </fieldset>
       </form>
     </aside>
-    <div class="page__main-content">
+    <div class="page__catalog catalog">
       <div class="sort">
         <h3 class="sort__title">Сортировать:</h3>
         <ul class="sort__buttons">

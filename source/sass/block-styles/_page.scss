@@ -5,6 +5,15 @@
   padding-right: 140px;
 }
 
+.page--inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding-top: 0;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
 .page__description {
   display: inline-block;
   width: 795px;
@@ -16,4 +25,10 @@
   vertical-align: top;
   width: 360px;
   min-height: 530px;
+}
+
+
+.page__catalog {
+  outline: 3px dashed pink;
+  width: 760px;
 }
