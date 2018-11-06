@@ -1,15 +1,73 @@
 .filters {
   width: 260px;
-  outline: 3px dotted aqua;
 }
 
 .filters legend {
   font-family: "robotobold", "Arial", sans-serif;
-  font-size: 19px;
+  font-size: 18px;
   text-transform: uppercase;
   padding-top: 54px;
 }
 
 .filters__layout-type label {
+  cursor: pointer;
+  position: relative;
   padding-left: 35px;
+}
+
+.filters__layout-type label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 4px solid rgba(166, 166, 166, 1);
+}
+
+.filters__layout-type-radio:checked ~ label::before {
+  background-color: rgba(166, 166, 166, 1);
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 1);
+}
+
+.filters__layout-type-radio[name="layout-type-disabled"] ~ label::before {
+  display: none;
+}
+
+.filters__features {
+  margin-bottom: 25px;
+}
+
+.filters__features legend {
+  padding-top: 24px;
+}
+
+.filters__features label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 35px;
+}
+
+.filters__features label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 10%;
+  border: 4px solid rgba(166, 166, 166, 1);
+}
+
+.filters__features-checkbox:checked ~ label::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 10px;
+  left: 7px;
+  top: 1px;
+  border: 4px solid rgba(166, 166, 166, 1);
+  border-top-style: none;
+  border-right-style: none;
+  transform: rotate(-45deg);
+  box-shadow: inset 0 -1px 0 1px rgba(255, 255, 255, 1), 0 1px 0 1px rgba(255, 255, 255, 1);
 }
