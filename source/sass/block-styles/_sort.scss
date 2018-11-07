@@ -1,18 +1,26 @@
 .sort {
   display: flex;
-  background-color: pink;
+  justify-content: space-between;
 }
 
 .sort__title {
   font-size: 18px;
   text-transform: uppercase;
+  line-height: 7;
   margin: 0;
+  width: 360px;
 }
 
 .sort__buttons {
   display: flex;
+  justify-content: space-between;
+  line-height: 8;
+  width: 280px;
 }
 
 .sort__rate-buttons {
   display: flex;
+  justify-content: space-between;
+  line-height: 8;
+  width: 40px;
 }
