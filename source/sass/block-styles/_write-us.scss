@@ -27,8 +27,9 @@
   border: none;
   margin: 0;
   padding: 0;
-  color: rgba(251, 86, 90, 0.5);
+  color: rgba(251, 86, 90, 1);
   background-color: transparent;
+  opacity: 0.7;
 }
 
 .write-us__form {
@@ -60,6 +61,7 @@
   width: 360px;
   height: 50px;
   padding-left: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .write-us__message textarea {
@@ -67,4 +69,32 @@
   width: 760px;
   height: 120px;
   padding: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+///////////////////////////////////////////
+// Поведение кнопки закрыия попапа и полей
+.write-us__close-popup:hover,
+.write-us__close-popup:focus {
+  opacity: 1;
+  transition: ease-out 0.2s;
+}
+
+.write-us__close-popup:active {
+  opacity: 0.3;
+  transition: ease-out 0.2s;
+}
+
+.write-us__name input:focus,
+.write-us__email input:focus,
+.write-us__message textarea:focus {
+  border: 2px solid rgba(0, 0, 0, 1);
+  transition: ease-out 0.2s;
+}
+
+.write-us__name input:invalid,
+.write-us__email input:invalid {
+  color: rgba(231, 66, 70, 1);
+  border: 2px solid rgba(231, 66, 70, 1);
+  transition: ease-out 0.2s;
 }

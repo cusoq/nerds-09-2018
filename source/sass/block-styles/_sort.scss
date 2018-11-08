@@ -3,6 +3,19 @@
   justify-content: space-between;
 }
 
+.sort button {
+  opacity: 0.3;
+}
+
+.sort button:hover,
+.sort button:focus {
+  opacity: 0.7;
+}
+
+.sort button:active {
+  opacity: 1;
+}
+
 .sort__title {
   font-size: 18px;
   text-transform: uppercase;

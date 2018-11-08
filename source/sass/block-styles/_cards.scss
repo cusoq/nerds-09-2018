@@ -15,8 +15,7 @@
   height: 576px;
   margin-bottom: 34px;
   padding-top: 40px;
-  border-radius: 1%;
-  background-color: rgba(77, 77, 77, 1);
+  background-color: rgba(233, 233, 233, 1);
 }
 
 .cards__item::before {
@@ -27,17 +26,18 @@
   top: -8px;
   left: 10px;
   z-index: 1;
-  // background-color: rgba(255, 255, 255, 1);
-  // background-image: url("../img/browser-360-40.jpg");
 }
 
-.cards__item:hover::before {
-  opacity: 1;
-}
-
-.cards__item:hover {
+.cards__item:hover,
+.cards__item:focus {
   box-shadow: 0 4px 10px 4px rgba(237, 237, 237, 1);
-  background-color: rgba(233, 233, 233, 1);
+  background-color: rgba(77, 77, 77, 1);
+  transition: ease-out 0.25s;
+}
+
+.cards__item:hover .cards__popup,
+.cards__item:focus .cards__popup {
+  display: block;
 }
 
 .cards__popup {

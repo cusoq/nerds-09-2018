@@ -53,8 +53,10 @@
 .partner-list__link:hover img,
 .partner-list__link:focus img {
   opacity: 1;
+  transition: ease-out 0.2s;
 }
 
 .partner-list__link:active img {
   opacity: 0.1;
+  transition: ease-out 0.2s;
 }

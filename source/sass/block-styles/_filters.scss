@@ -13,6 +13,12 @@
   cursor: pointer;
   position: relative;
   padding-left: 35px;
+  opacity: 0.7;
+}
+
+.filters__layout-type label:hover,
+.filters__layout-type label:focus {
+  opacity: 1;
 }
 
 .filters__layout-type label::before {
@@ -22,12 +28,16 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  border: 4px solid rgba(166, 166, 166, 1);
+  border: 4px solid rgba(77, 77, 77, 1);
 }
 
 .filters__layout-type-radio:checked ~ label::before {
-  background-color: rgba(166, 166, 166, 1);
+  background-color: rgba(77, 77, 77, 1);
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 1);
+}
+
+.filters__layout-type-radio[name="layout-type-disabled"] ~ label {
+  opacity: 0.3;
 }
 
 .filters__layout-type-radio[name="layout-type-disabled"] ~ label::before {
@@ -46,6 +56,12 @@
   cursor: pointer;
   position: relative;
   padding-left: 35px;
+  opacity: 0.7;
+}
+
+.filters__features label:hover,
+.filters__features label:focus {
+  opacity: 1;
 }
 
 .filters__features label::before {
@@ -55,7 +71,7 @@
   width: 25px;
   height: 25px;
   border-radius: 10%;
-  border: 4px solid rgba(166, 166, 166, 1);
+  border: 4px solid rgba(77, 77, 77, 1);
 }
 
 .filters__features-checkbox:checked ~ label::after {
@@ -65,7 +81,7 @@
   height: 10px;
   left: 7px;
   top: 1px;
-  border: 4px solid rgba(166, 166, 166, 1);
+  border: 4px solid rgba(77, 77, 77, 1);
   border-top-style: none;
   border-right-style: none;
   transform: rotate(-45deg);
