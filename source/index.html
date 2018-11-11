@@ -17,40 +17,49 @@
           <img src="img/nerds-logo-160-65.png" width="160" height="65" alt="Логотип">
         </a></li>
       <li>
-        <ul class="header__links">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="inner.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
+        <nav class="semantic">
+          <ul class="header__links">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="inner.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
       </li>
-      <li><button class="button button__cart">Корзина</button></li>
+      <li><a href="#" class="button button__cart">Корзина</a></li>
     </ul>
-    <h1 class="header__title visually-hidden">
+    <h1 class="semantic header__title visually-hidden">
       Nerds главная страница
     </h1>
     <input class="slider__radio--expencive visually-hidden" type="radio" name="point" id="slide1" checked>
     <input class="slider__radio--love visually-hidden" type="radio" name="point" id="slide2">
     <input class="slider__radio--hard visually-hidden" type="radio" name="point" id="slide3">
     <div class="slider__content slider__content--expencive">
+      <h2 class="semantic visually-hidden">
+        Первый слоган слайдера
+      </h2>
       <p class="header__slogan">
         Долго, дорого, скрупулёзно.
       </p>
       <p class="header__description">
         Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
       </p>
-      <!-- <button class="button button__slider">Узнать больше</button> -->
     </div>
     <div class="slider__content slider__content--love">
+      <h2 class="semantic visually-hidden">
+        Второй слоган слайдера
+      </h2>
       <p class="header__slogan">
         Любим математику как никто другой
       </p>
       <p class="header__description">
         Никакого креатива, только математические формулы<br> для рассчёта идеальных пропорций.
       </p>
-      <!-- <button class="button button__slider">Узнать больше</button> -->
     </div>
     <div class="slider__content slider__content--hard">
+      <h2 class="semantic visually-hidden">
+        Третий слоган слайдера
+      </h2>
       <p class="header__slogan">
         Только ночь, только хардкор
       </p>
@@ -63,7 +72,7 @@
       <label class="slider__control--love" for="slide2"></label>
       <label class="slider__control--hard" for="slide3"></label>
     </div>
-    <button class="button button__slider">Узнать больше</button>
+    <a href="#" class="button button__slider">Узнать больше</a>
   </header>
   <main class="page">
 
@@ -74,9 +83,9 @@
         <p class="offers__description">
           Мир никогда не будет прежним после того как увидит ваш сайт!
         </p>
-        <button class="button button__offer button__offer--web">
+        <a href="#" class="button button__offer button__offer--web">
           Заказать
-        </button>
+        </a>
       </li>
       <li class="offers__item">
         <img src="img/illustration-2-300-146.png" width="300" height="146" alt="Приложения">
@@ -84,9 +93,9 @@
         <p class="offers__description">
           Покорите топ-10 приложений в AppStore и Google Play
         </p>
-        <button class="button button__offer button__offer--app">
+        <a href="#" class="button button__offer button__offer--app">
           Заказать
-        </button>
+        </a>
       </li>
       <li class="offers__item">
         <img src="img/illustration-3-300-146.png" width="300" height="146" alt="Презентации">
@@ -94,12 +103,15 @@
         <p class="offers__description">
           Вы даже не подозреваете, насколько вы изумительны!
         </p>
-        <button class="button button__offer button__offer--presentation">
+        <a href="#" class="button button__offer button__offer--presentation">
           Заказать
-        </button>
+        </a>
       </li>
     </ul>
     <div class="page__description page-description">
+      <h2 class="semantic visually-hidden">
+        Кто мы такие
+      </h2>
       <p class="page-description__title">
         <b>Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</b>
       </p>
@@ -117,6 +129,9 @@
     </div>
     <div class="page__statistics page-statistics">
       <img src="img/nerds-illustration-360-208.png" width="360" height="208" alt="Нёрдс-иллюстрация">
+      <h2 class="semantic visually-hidden">
+        Цифры:
+      </h2>
       <p class="page-statistics__title">
         С 2004 года любим точность во всём:
       </p>
@@ -188,7 +203,7 @@
     <h2 class="write-us__title">
       Напишите нам
     </h2>
-    <button class="write-us__close-popup close-popup"><span class="visually-hidden">Закрыть</span>&times;</button>
+    <button class="write-us__close-popup close-popup"><span class="semantic visually-hidden">Закрыть</span>&times;</button>
     <form class="write-us__form" action="?" method="post">
       <p class="write-us__name">
         <label for="name">Ваше имя:</label><br>

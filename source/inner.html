@@ -13,19 +13,21 @@
 <body class="main-page">
   <header class="header header--inner">
     <ul class="header__menu">
-    <li><a class="header__logo header__logo--inner" href="index.html">
-      <img src="img/nerds-logo-160-65.png" width="160" height="65" alt="Логотип">
-    </a></li>
-    <li>
-      <ul class="header__links">
-      <li><a href="index.html">Студия</a></li>
-      <li><a href="#">Клиенты</a></li>
-      <li><a class="current">Магазин</a></li>
-      <li><a href="#">Контакты</a></li>
+      <li><a class="header__logo header__logo--inner" href="index.html">
+          <img src="img/nerds-logo-160-65.png" width="160" height="65" alt="Логотип">
+        </a></li>
+      <li>
+        <nav class="semantic">
+          <ul class="header__links">
+            <li><a href="index.html">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a class="current">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </li>
+      <li><a href="#" class="button button__cart">Корзина</a></li>
     </ul>
-  </li>
-      <li><button class="button button__cart">Корзина</button></li>
-  </ul>
     <div class="header__description">
       <h1 class="header__title">
         Магазин готовых шаблонов
@@ -39,8 +41,8 @@
           <legend>Стоимость:</legend>
           <input class="range__input visually-hidden" type="range" name="price" value="1000">
           <div class="range__controls">
-              <div class="range__bar" style="margin-left: 0%; width: 55%">
-              </div>
+            <div class="range__bar" style="margin-left: 0%; width: 55%">
+            </div>
             <div class="range__control range__control--min"></div>
             <div class="range__control range__control--max"></div>
           </div>
@@ -97,9 +99,9 @@
             <p class="cards__description">
               Информационный сайт<br> для туристов
             </p>
-            <button class="button button__card">
+            <a href="#" class="button button__card">
               9&thinsp;900&thinsp;руб.
-            </button>
+            </a>
           </div>
         </li>
         <li class="cards__item" tabindex="0">
@@ -109,9 +111,9 @@
             <p class="cards__description">
               Продуктовый лендинг<br> приложения для iOS и Android
             </p>
-            <button class="button button__card">
+            <a href="#" class="button button__card">
               9&thinsp;900&thinsp;руб.
-            </button>
+            </a>
           </div>
         </li>
         <li class="cards__item" tabindex="0">
@@ -121,9 +123,9 @@
             <p class="cards__description">
               Салон красоты.<br> Для мужчин, да.
             </p>
-            <button class="button button__card">
+            <a href="#" class="button button__card">
               9&thinsp;900&thinsp;руб.
-            </button>
+            </a>
           </div>
         </li>
         <li class="cards__item" tabindex="0">
@@ -133,9 +135,9 @@
             <p class="cards__description">
               Интернет-магазин<br> вязаных игрушек
             </p>
-            <button class="button button__card">
+            <a href="#" class="button button__card">
               9&thinsp;900&thinsp;руб.
-            </button>
+            </a>
           </div>
         </li>
         <li class="cards__item" tabindex="0">
@@ -145,9 +147,9 @@
             <p class="cards__description">
               Лендинг курсов повышения<br> квалификации
             </p>
-            <button class="button button__card">
+            <a href="#" class="button button__card">
               9&thinsp;900&thinsp;руб.
-            </button>
+            </a>
           </div>
         </li>
         <li class="cards__item" tabindex="0">
@@ -157,9 +159,9 @@
             <p class="cards__description">
               Промо-сайт производителя<br> крафтового кваса
             </p>
-            <button class="button button__card">
+            <a href="#" class="button button__card">
               9&thinsp;900&thinsp;руб.
-            </button>
+            </a>
           </div>
         </li>
       </ul>
@@ -206,7 +208,7 @@
     <h2 class="write-us__title">
       Напишите нам
     </h2>
-    <button class="write-us__close-popup close-popup"><span class="visually-hidden">Закрыть</span>&times;</button>
+    <button class="write-us__close-popup close-popup"><span class="semantic visually-hidden">Закрыть</span>&times;</button>
     <form class="write-us__form" action="?" method="post">
       <p class="write-us__name">
         <label for="name">Ваше имя:</label><br>
@@ -223,7 +225,7 @@
       <button class="button button__write-us">Отправить</button>
     </form>
   </div>
- <script src="js/dialog.js"></script>
+  <script src="js/dialog.js"></script>
 </body>
 
 </html>

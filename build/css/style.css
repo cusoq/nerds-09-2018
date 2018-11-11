@@ -760,9 +760,12 @@
   padding-right: 20px; }
 
 .button {
-  text-transform: uppercase;
+  display: block;
   font-family: "robotomedium", "Arial", sans-serif;
   color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 3.2;
   border: none;
   margin: 0;
   padding: 0; }
@@ -838,6 +841,7 @@
   background-color: transparent; }
 
 .button__card {
+  margin: 0 auto;
   width: 200px;
   height: 50px;
   background-color: #fb565a; }
