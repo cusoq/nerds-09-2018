@@ -476,7 +476,9 @@
   opacity: 1; }
 
 .sort__title {
-  font-size: 18px;
+  font-family: "robotomedium", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
   text-transform: uppercase;
   line-height: 7;
   margin: 0;
@@ -506,8 +508,8 @@
   width: 260px; }
 
 .filters legend {
-  font-family: "robotobold", "Arial", sans-serif;
-  font-size: 18px;
+  font-family: "robotomedium", "Arial", sans-serif;
+  font-size: 19px;
   text-transform: uppercase;
   padding-top: 54px; }
 
@@ -669,8 +671,8 @@
   padding-top: 60px; }
 
 .page-footer__slogan {
-  font-family: "robotobold", "Arial", sans-serif;
-  font-size: 36px;
+  font-family: "robotomedium", "Arial", sans-serif;
+  font-size: 37px;
   line-height: 1.5;
   margin: 0; }
 
@@ -1008,13 +1010,6 @@
 .header__description {
   padding-top: 8px;
   padding-bottom: 22px; }
-
-@font-face {
-  font-family: "robotobold";
-  src: url("../../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../../fonts/roboto-bold-webfont.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap; }
 
 @font-face {
   font-family: "robotomedium";
