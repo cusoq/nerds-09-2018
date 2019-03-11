@@ -106,10 +106,7 @@ gulp.task("build", function (done) {
   run(
     "clean",
     "copy",
-    "style",
-    "sprite",
-    "html",
-    "minifyhtml",
+
     done
   );
 });
